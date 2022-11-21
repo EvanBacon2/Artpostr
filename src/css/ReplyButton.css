@@ -1,0 +1,43 @@
+.reply-button {
+    font-size: 1rem;
+
+    fill: white;
+    stroke-width: 3em;
+
+    fill-opacity: 0;
+
+    height: 1.5em;
+    width: 1.65em;
+
+    align-self: center;
+
+    transition: stroke .2s linear, fill-opacity .2s linear;
+}
+
+.reply-button.twitter {
+    stroke: var(--twitter);
+}
+
+.reply-button.pinterest {
+    stroke: var(--pinterest);
+}
+
+.reply-button.reddit {
+    stroke: var(--reddit);
+}
+
+.reply-button.tumblr {
+    stroke: var(--tumblr);
+}
+
+.reply-button.active {
+    stroke: white;
+}
+
+.reply-button.active.true {
+    fill-opacity: 1;
+}
+
+.reply-button.active.false {
+    fill-opacity: 0;
+}

@@ -1,0 +1,38 @@
+.site-button.apply-button {
+    font-size: 1rem;
+
+    width: 12.5em;
+    height: 2.5em;
+
+    border-radius: 1.25em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0 .75em;
+}
+
+.apply-button.twitter {
+    border: 0.15em solid var(--twitter);
+}
+
+.apply-button.pinterest {
+    border: 0.15em solid var(--pinterest);
+}
+
+.apply-button.reddit {
+    border: 0.15em solid var(--reddit);
+}
+
+.apply-button.tumblr {
+    border: 0.15em solid var(--tumblr);
+}
+
+.apply-icon {
+    height: 1.5em;
+    width: 1.5em;
+    align-self: center;
+}
+
+

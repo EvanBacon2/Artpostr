@@ -1,0 +1,61 @@
+.site-button {
+    font-size: 1rem;
+
+    width: 9em;
+    height: 9em;
+
+    padding: 0;
+
+    background-color: var(--light-gray);
+    border-radius: 10%;
+
+    transition: background-color .2s linear, fill .2s linear;
+}
+
+.site-button:hover {
+    background-color: var(--dark-gray);
+}
+
+.site-button.twitter {
+    border: 0.2em solid var(--twitter);
+    fill: var(--twitter);
+}
+
+.site-button.twitter.true {
+    background-color: var(--twitter);
+    fill: white;
+}
+
+.site-button.pinterest {
+    border: 0.2em solid var(--pinterest);
+    fill: var(--pinterest);
+}
+
+.site-button.pinterest.true {
+    background-color: var(--pinterest);
+    fill: white;
+}
+
+.site-button.reddit {
+    border: 0.2em solid var(--reddit);
+    fill: var(--reddit);
+}
+
+.site-button.reddit.true {
+    background-color: var(--reddit);
+    fill: white;
+}
+
+.site-button.tumblr {
+    border: 0.2em solid var(--tumblr);
+    fill: var(--tumblr);
+}
+
+.site-button.tumblr.true {
+    background-color: var(--tumblr);
+    fill: white;
+}
+
+.site-button .site-icon {
+    height: 5em;
+}
