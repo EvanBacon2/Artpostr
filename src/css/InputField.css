@@ -1,21 +1,32 @@
 .input-field {
-    --scale: 4.8;
-
-    font-size: calc(1em * var(--scale));
     font-family: "Rubik", sans-serif;
-
-    width: 18.75em;
 
     background-color: var(--light-gray);
     color: var(--text);
 
     border: none;
-    border-radius: calc(.5em / var(--scale));
 
     box-sizing: border-box;
-    padding: calc(1.4em / var(--scale)) calc(1.8em / var(--scale));
 }
 
 .input-field:focus {
     outline: none;
+}
+
+.input-field.title {
+    --title-scale: 4.8;
+    font-size: calc(1em * var(--title-scale));
+    width: calc(90em / var(--title-scale));
+    border-radius: calc(.5em / var(--title-scale));
+    padding: calc(1.4em / var(--title-scale)) calc(1.8em / var(--title-scale));
+}
+
+.input-field.multi-line {
+    --multi-scale: 2.4;
+    font-size: calc(1em * var(--multi-scale));
+    width: calc(90em / var(--multi-scale));
+    min-height: calc(11em / var(--multi-scale));
+    border-radius: calc(.5em / var(--multi-scale));
+    padding: calc(1.4em / var(--multi-scale)) calc(1.8em / var(--multi-scale));
+    resize: vertical;
 }

@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 import TitleInput from "../js/TitleInput.js"
+import MultiLineInput from "../js/MultiLineInput.js"
 import ApplyButton from "../js/ApplyButton.js"
 import DeleteComponentButton from "../js/DeleteComponentButton.js"
 
@@ -22,13 +23,26 @@ const BasicComponent = ({ type }) => {
         setInput(newInput)
     }
 
+    const inputField = () => {
+        switch (type) {
+            case "title":
+                return <TitleInput inputCallback={inputCallback} />
+            case "description":
+                return <MultiLineInput inputCallback={inputCallback} />
+            case "alt-text":
+                return <MultiLineInput inputCallback={inputCallback} />
+            default:
+                return <div />
+        }
+    }
+
     const applyButtons = () => {
         return (
             <>
                 {type !== "title" && <ApplyButton site="twitter" />}
                 {type !== "tag" && <ApplyButton site="pinterest" />}
                 <ApplyButton site="reddit" />
-                {type !== "title" && <ApplyButton site="reddit" />}
+                {type !== "title" && <ApplyButton site="tumblr" />}
             </>
         );
     }
@@ -40,7 +54,7 @@ const BasicComponent = ({ type }) => {
                     Remaining Characters - 300
                 </span>
             </div>
-            <TitleInput inputCallback={inputCallback} />
+            {inputField()}
             <div className="lower-flex">
                 <div className="apply-flex">
                     {applyButtons()}

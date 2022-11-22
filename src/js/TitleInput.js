@@ -6,7 +6,7 @@ const TitleInput = ({ inputCallback }) => {
     }
 
     return (
-        <input type="text" className="input-field title" onChange={handleChange} placeholder="Title" />
+        <input type="text" className="input-field title" onChange={handleChange} />
     );
 }
 
