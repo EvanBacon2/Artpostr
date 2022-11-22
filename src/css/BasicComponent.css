@@ -1,0 +1,47 @@
+.basic-component {
+    width: 95em;
+    flex-direction: column;
+}
+
+.upper-flex {
+    display: flex;
+    width: 90em;
+    padding: 0 1.5em 1.5em 1.5em;
+    margin: auto;
+
+    justify-content: end;
+
+    box-sizing: border-box;
+}
+
+.char-count {
+    font-size: 1.6em;
+    font-family: "Rubik", sans-serif;
+    color: var(--text);
+
+    margin-right: 0;
+}
+
+.lower-flex {
+    display: flex;
+    flex-direction: row;
+
+    width: 90em;
+    margin: auto;
+    padding: .8em 1.4em;
+
+    box-sizing: border-box;
+
+    justify-content: space-between;
+}
+
+.apply-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .8em 1.2em;
+
+    justify-content: start;
+
+    flex-basis: 65%;
+}

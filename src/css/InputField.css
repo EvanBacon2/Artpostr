@@ -1,0 +1,21 @@
+.input-field {
+    --scale: 4.8;
+
+    font-size: calc(1em * var(--scale));
+    font-family: "Rubik", sans-serif;
+
+    width: 18.75em;
+
+    background-color: var(--light-gray);
+    color: var(--text);
+
+    border: none;
+    border-radius: calc(.5em / var(--scale));
+
+    box-sizing: border-box;
+    padding: calc(1.4em / var(--scale)) calc(1.8em / var(--scale));
+}
+
+.input-field:focus {
+    outline: none;
+}
