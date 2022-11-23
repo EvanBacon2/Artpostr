@@ -9,7 +9,7 @@ import DeleteComponentButton from './DeleteComponentButton.js'
 function App() {
   return (
       <div className="App">
-          <BasicComponent type="description" />
+          <BasicComponent type="tag" />
       </div>
   );
 }

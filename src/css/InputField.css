@@ -30,3 +30,38 @@
     padding: calc(1.4em / var(--multi-scale)) calc(1.8em / var(--multi-scale));
     resize: vertical;
 }
+
+.input-field.tag {
+    --tag-scale: 2.4; 
+    font-size: calc(1em * var(--tag-scale));
+    min-width: calc(10em / var(--tag-scale));
+    /*max-width: calc(30em / var(--tag-scale));*/
+    
+    border-radius: calc(.5em / var(--tag-scale));
+    padding: calc(1.4em / var(--tag-scale)) calc(1.8em / var(--tag-scale));
+
+    background-color: white;
+
+    display: inline-block;
+    text-align: left;
+}
+
+#width-ref {
+    position: absolute;
+    opacity: 0;
+    white-space: pre;
+}
+
+.tag-group {
+    background-color: var(--light-gray);
+    box-sizing: border-box;
+    width: 90em;
+    padding: 1.4em 1.8em;
+
+    border-radius: .5em;
+
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    gap: .5em;
+}

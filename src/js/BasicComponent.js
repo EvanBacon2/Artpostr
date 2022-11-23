@@ -2,6 +2,7 @@ import { useState } from "react"
 
 import TitleInput from "../js/TitleInput.js"
 import MultiLineInput from "../js/MultiLineInput.js"
+import TagGroup from "../js/TagGroup.js"
 import ApplyButton from "../js/ApplyButton.js"
 import DeleteComponentButton from "../js/DeleteComponentButton.js"
 
@@ -29,6 +30,8 @@ const BasicComponent = ({ type }) => {
                 return <TitleInput inputCallback={inputCallback} />
             case "description":
                 return <MultiLineInput inputCallback={inputCallback} />
+            case "tag":
+                return <TagGroup inputCallback={inputCallback} />
             case "alt-text":
                 return <MultiLineInput inputCallback={inputCallback} />
             default:
