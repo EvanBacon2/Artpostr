@@ -35,21 +35,12 @@
     --tag-scale: 2.4; 
     font-size: calc(1em * var(--tag-scale));
     min-width: calc(10em / var(--tag-scale));
-    /*max-width: calc(30em / var(--tag-scale));*/
-    
+    max-width: calc(86.4em / var(--tag-scale));
     border-radius: calc(.5em / var(--tag-scale));
     padding: calc(1.4em / var(--tag-scale)) calc(1.8em / var(--tag-scale));
-
     background-color: white;
 
-    display: inline-block;
-    text-align: left;
-}
-
-#width-ref {
-    position: absolute;
-    opacity: 0;
-    white-space: pre;
+    text-align: start;
 }
 
 .tag-group {

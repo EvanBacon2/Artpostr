@@ -21,13 +21,9 @@ const TagGroup = ({ inputCallback }) => {
         }
     }
 
-    const onChange = (key, value) => {
-        setTagList(prevTagList => new Map(prevTagList.set(key, value)))
-    }
-
     const createTags = () => {
         let tags = []
-        tagList.forEach((value, key) => tags.push(<TagInput key={key} tagKey={key} tagValue={value} onChange={onChange} onSubmit={onSubmit} />))
+        tagList.forEach((value, key) => tags.push(<TagInput key={key} tagKey={key} onSubmit={onSubmit} />))
         return tags
     }
 
