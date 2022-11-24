@@ -37,7 +37,7 @@
     min-width: calc(10em / var(--tag-scale));
     max-width: calc(86.4em / var(--tag-scale));
     border-radius: calc(.5em / var(--tag-scale));
-    padding: calc(1.4em / var(--tag-scale)) calc(1.8em / var(--tag-scale));
+    padding: calc(.8em / var(--tag-scale)) calc(.8em / var(--tag-scale));
     background-color: white;
 
     text-align: start;
@@ -47,7 +47,8 @@
     background-color: var(--light-gray);
     box-sizing: border-box;
     width: 90em;
-    padding: 1.4em 1.8em;
+    margin: auto;
+    padding: .8em 1.5em;
 
     border-radius: .5em;
 
