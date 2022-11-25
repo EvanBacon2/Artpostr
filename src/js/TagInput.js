@@ -17,16 +17,26 @@ const TagInput = ({ tagKey, onSubmit }) => {
         }
     }
 
+    const handleInput = (e) => {
+        console.log(span.current.textContent)
+    }
+
     const handlePaste = (e) => {
         e.preventDefault()
-        let text = e.clipboardData.getData('text')
+
+        let text = (e.clipboardData || window.clipboardData).getData('text');
         text = text.replaceAll(/(\r\n|\n|\r)/gm, '')
-        span.current.textContent = text
+  
+        const selection = window.getSelection();
+        if (!selection.rangeCount) return;
+        selection.deleteFromDocument();
+        selection.getRangeAt(0).insertNode(document.createTextNode(text));
+        selection.collapseToEnd();
     }
 
     return (
         <span className="input-field tag" ref={span} contentEditable="true"
-            onBlur={handleBlur} onKeyDown={handleKeyDown} onPaste={handlePaste}></span>
+            onBlur={handleBlur} onKeyDown={handleKeyDown} onInput={handleInput} onPaste={handlePaste}></span>
     );
 }
 
