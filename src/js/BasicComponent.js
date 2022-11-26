@@ -18,7 +18,6 @@ import "../css/BasicComponent.css"
  */
 const BasicComponent = ({ type }) => {
     const [input, setInput] = useState("")
-    const [componentCount, setComponentCount] = useState(1)
 
     const inputCallback = (newInput) => {
         setInput(newInput)
@@ -26,13 +25,13 @@ const BasicComponent = ({ type }) => {
 
     const inputField = () => {
         switch (type) {
-            case "title":
+            case "Title":
                 return <TitleInput inputCallback={inputCallback} />
-            case "description":
+            case "Description":
                 return <MultiLineInput inputCallback={inputCallback} />
-            case "tag":
+            case "Tag":
                 return <TagGroup inputCallback={inputCallback} />
-            case "alt-text":
+            case "Alt Text":
                 return <MultiLineInput inputCallback={inputCallback} />
             default:
                 return <div />

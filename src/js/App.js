@@ -1,15 +1,12 @@
 import '../css/App.css';
 import "../css/Colors.css"
 
-import SiteButton from './SiteButton.js'
-import ApplyButton from './ApplyButton.js'
-import BasicComponent from './BasicComponent.js'
-import DeleteComponentButton from './DeleteComponentButton.js'
+import BasicComponentGroup from './BasicComponentGroup.js'
 
 function App() {
   return (
       <div className="App">
-          <BasicComponent type="tag" />
+          <BasicComponentGroup type="Description" />
       </div>
   );
 }

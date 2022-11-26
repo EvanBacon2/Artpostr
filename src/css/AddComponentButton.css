@@ -1,0 +1,16 @@
+.add-component {
+    --scale: 2;
+    font-size: calc(1em * var(--scale));
+    font-family: "Rubik", sans-serif;
+    background-color: var(--light-gray);
+    color: var(--text);
+    border: none;
+    border-radius: calc(5em / var(--scale));
+
+    width: fit-content;
+    height: fit-content;
+    padding: calc(.3em / var(--scale)) calc(1em / var(--scale));
+    margin-top: calc(2.4em / var(--scale));
+
+    align-self: end;
+}
