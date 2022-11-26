@@ -16,7 +16,7 @@ import "../css/BasicComponent.css"
  * 
  * @param {string} type - the type of component to be created
  */
-const BasicComponent = ({ type }) => {
+const BasicComponent = ({ compKey, type, deleteComponent }) => {
     const [input, setInput] = useState("")
 
     const inputCallback = (newInput) => {
@@ -61,7 +61,7 @@ const BasicComponent = ({ type }) => {
                 <div className="apply-flex">
                     {applyButtons()}
                 </div>
-                <DeleteComponentButton />
+                <DeleteComponentButton compKey={compKey} deleteComponent={deleteComponent} />
             </div>
         </div>
     );

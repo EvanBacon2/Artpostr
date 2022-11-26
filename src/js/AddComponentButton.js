@@ -1,8 +1,8 @@
 import "../css/AddComponentButton.css"
 
-const AddComponentButton = ({ type }) => {
+const AddComponentButton = ({ type, onClick }) => {
     return (
-        <button className="add-component">+ {type}</button>
+        <button className="add-component" onClick={onClick}>+ {type}</button>
     );
 }
 
